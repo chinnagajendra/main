@@ -15,6 +15,6 @@ stages:
             publishJUnitResults: 'true'
             testResultFiles: 'default'
             jdkVersionOption: '1.17'
-            goals: 'package'
+            goals: 'validate'
         
      
