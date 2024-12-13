@@ -1,9 +1,7 @@
 ---
-pool: 'ubuntu-24.04'
+pool: default
 trigger:
-  branches:
-    include:
-      - main
+  - main
 stages:
   - stage: build
     jobs:
@@ -11,10 +9,10 @@ stages:
        steps:
         - task: maven@4
           inputs:
-            mavemPOMFile: 'pom.xml'
-            publishJUnitResults: 'true'
-            testResultFiles: 'default'
+            mavemPOMFile: pom.xml
+            publishJUnitResults: true
+            testResultFiles: default
             jdkVersionOption: '1.17'
-            goals: 'validate'
+            goals: package
         
      
