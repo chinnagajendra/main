@@ -13,6 +13,6 @@ stages:
             publishJUnitResults: true
             testResultFiles: default
             jdkVersionOption: '1.17'
-            goals: vaildate
+            goals: package
         
      
